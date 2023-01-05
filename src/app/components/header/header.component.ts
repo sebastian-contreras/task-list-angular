@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   tittle="soy header";
+  toggleButtonAdd(){
+    console.log('sadasd')
+  }
 }
