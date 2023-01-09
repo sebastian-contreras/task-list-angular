@@ -24,4 +24,9 @@ export class TaskComponent implements OnInit {
   toggleTask(task: Task): void {
     this.taskService.toggleTaskReminder(task).subscribe( )
   }
+  addTask(task:Task): void {
+    this.taskService.addTask(task).subscribe((task)=>{
+      this.tasks.push(task)
+    })
+  }
 }
